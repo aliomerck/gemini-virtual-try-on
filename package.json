@@ -1,0 +1,19 @@
+{
+  "name": "gemini-3-vton",
+  "version": "1.0.0",
+  "description": "Virtual Try-On System using Gemini 3 Pro Image Preview",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && node index.js",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["virtual-try-on", "gemini", "ai", "fashion"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
